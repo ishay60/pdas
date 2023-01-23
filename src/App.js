@@ -9,18 +9,22 @@ import 'bulma/css/bulma.css'
 function App() {
     return (
         <div>
-            <div>Personal Digital Assistant</div>
+            <section className="hero is-primary"> 
+                <div className="hero-body">
+                    <p className="title">Personal Digital Assistant</p>
+                </div>
+            </section>
 
             <div className="container">
                 <section className="section">
-                    <div className="culomns">
-                        <div className="column is-3">
+                    <div className="columns is-multiline">
+                        <div className="column is-4 ">
                             <ProfileCard title="Alexa" handle="@alexa99" image={AlexaImage}/>
                         </div>
-                        <div className="column is-3">
+                        <div className="column is-4 ">
                             <ProfileCard title= "Cortana" handle = "@cortana32" image={CortanaImage}/>
                         </div>
-                        <div className="column is-3">
+                        <div className="column  is-4 ">
                             <ProfileCard title="Siri" handle="@Siri01" image={SiriImage} />                            
                         </div>
                     </div>
